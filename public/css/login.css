@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    /* overflow: hidden; */
+}
+body {
+    background-image: url("../images/bg-login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/*-----------------------------------------
+    Main Content
+----------------------------------------*/
+.outer-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrapper{
+    width: 80vw;
+    max-width: 650px;
+    height: 70vh;
+    background: #00000095;
+    border-radius: 42px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.daftar-wrapper{
+    width: 80vw;
+    max-width: 650px;
+    height: 100%;
+    background: #00000095;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    overflow-y: auto !important;
+}
+
+/*-----------------------------------------
+    Logo
+----------------------------------------*/
+.logo-wrapper {
+    height: 160px;
+    width: 160px;
+    margin: 20 0 20 0;
+}
+.logo-wrapper .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*-----------------------------------------
+    Form Login
+----------------------------------------*/
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.form-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-login .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-login .input-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    /* font-style: italic; */
+}
+.choose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.remember-me {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.form-wrapper label {
+    margin: 0;
+    user-select: none;
+}
+.remember-me input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.remember-me input[type="checkbox"]:checked {
+    background-color: transparent;
+}
+.remember-me input[type="checkbox"]:checked::before {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f2f2f2;
+    font-size: 12px;
+    font-weight: bold;
+}
+.remember-me label{
+    font-size: 14px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+.forgot-password a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+.daftar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+.daftar-btn a{
+    /* font-size: 14px; */
+    text-decoration: none;
+    color: #f2f2f2;
+    background-color: #234df0;
+    border: 1px solid #234df0;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer;
+}
+.daftar-btn a:hover{
+    cursor: pointer;
+}
+
+/*-----------------------------------------
+    Form Daftar
+----------------------------------------*/
+.daftar-wrapper p{
+    color: #f2f2f2;
+}
+.daftar-wrapper .form-group-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.daftar-wrapper .form-group-inline .form-group {
+    flex: 1;
+}
+.daftar-wrapper .form-group-inline .form-group:nth-child(1) {
+    margin-right: 8px;
+}
+.daftar-wrapper .form-group-inline .form-group input {
+    width: 100%;
+}
+.daftar-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.daftar-wrapper .form-group p {
+    margin: 0;
+    font-weight: bold; 
+}
+.daftar-wrapper .form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f2f2f2;
+}
+.daftar-wrapper .form-group input[type="radio"] {
+    margin: 0;
+    accent-color: #234df0;
+}
+
+
